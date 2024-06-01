@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-const env = require('./config/env');
+const env = require('./env');
 
 const genAI = new GoogleGenerativeAI("AIzaSyDOdl-PmkDKxdm4gZKrhU2dKmoIDsYylwA", { debug: true });
 const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
